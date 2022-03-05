@@ -6,6 +6,9 @@ import org.junit.jupiter.api.Test;
 
 import questoes.Questao02;
 
+/* Classe de testes da segunda questão.
+ * @author: Matheus Proença. 
+ */
 public class TesteQuestao02 {
 
 	@Test

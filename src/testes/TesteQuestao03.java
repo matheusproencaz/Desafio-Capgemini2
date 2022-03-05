@@ -6,6 +6,9 @@ import org.junit.jupiter.api.Test;
 
 import questoes.Questao03;
 
+/* Classe de testes da terceira questão.
+ * @author: Matheus Proença. 
+ */
 public class TesteQuestao03 {
 
 	@Test
@@ -24,6 +27,18 @@ public class TesteQuestao03 {
 	void deveriaRetornarString3() {
 		Questao03 q3 = new Questao03();
 		assertEquals("merç auoa tse hpn", q3.encriptacao("matheus proença"));
+	}
+	
+	@Test
+	void deveriaRetornarErro01() {
+		Questao03 q3 = new Questao03();
+		assertEquals("Você digitou uma string nula", q3.encriptacao(null));
+	}
+	
+	@Test
+	void deveriaRetornarErro02() {
+		Questao03 q3 = new Questao03();
+		assertEquals("Você digitou uma string sem conteúdo", q3.encriptacao(""));
 	}
 	
 }
